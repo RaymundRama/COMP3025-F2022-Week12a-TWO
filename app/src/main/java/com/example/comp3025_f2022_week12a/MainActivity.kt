@@ -19,8 +19,10 @@ class MainActivity : AppCompatActivity() {
 
         }
 
-        FragmentTwoButton.setOnclickListener{
-
+        FragmentTwoButton.setOnClickListener{
+            supportFragmentManager.commit{
+                replace<FragmentTwo>(R.id.fragment_container)
+            }
         }
 
     }
